@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drumkit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="drumkit">
+      <div data-key="65" class="key">Boom</div>
+      <div data-key="83" class="key">Clap</div>
+      <div data-key="68" class="key">HiHat</div>
+      <div data-key="70" class="key">Kick</div>
+      <div data-key="71" class="key">Tom</div>
+      <div data-key="72" class="key">Think</div>
+    </div>
+
+    <div class="controls">
+      <div class="recording">
+        <button data-channel="1" class="recordButton">Nagrywanie Kanał 1</button>
+        <button data-channel="2" class="recordButton">Nagrywanie Kanał 2</button>
+        <button data-channel="3" class="recordButton">Nagrywanie Kanał 3</button>
+        <button data-channel="4" class="recordButton">Nagrywanie Kanał 4</button>
+      </div>
+
+      <div class="playback">
+        <button data-channel="1" class="playButton">Odtwarzaj Kanał 1</button>
+        <button data-channel="2" class="playButton">Odtwarzaj Kanał 2</button>
+        <button data-channel="3" class="playButton">Odtwarzaj Kanał 3</button>
+        <button data-channel="4" class="playButton">Odtwarzaj Kanał 4</button>
+        <button id="playAll">Odtwarzaj Wszystkie</button>
+      </div>
+      <button id="startStop">Start/Stop</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
